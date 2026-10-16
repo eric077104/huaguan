@@ -24,5 +24,33 @@
 <section class="trial"><div class="trial-icon">▤</div><div><div class="kicker">OPEN CLASS　　不定期舉辦</div><h2>想先了解課堂氛圍？</h2><p>華冠不定期舉辦國英數自試聽課程，歡迎家長與孩子踴躍報名。留下聯絡方式，下一場試聽資訊開放時通知您。</p></div><a class="cta" href="#contact">登記試聽課通知　→</a></section>
 <section class="dark" id="process"><div><div class="kicker">A CLEAR START　　03 / 學習流程</div><h2>先理解孩子，<br><em>再安排學習。</em></h2><p>每個孩子的起點不同。我們先聽、先看，再一起討論適合的方向。</p><a class="button-light" href="#contact">聊聊孩子的學習狀況　→</a></div><div class="steps"><div class="step"><small>01</small><div><b>先了解孩子</b><p>從學習狀況與近期困難開始談，不急著貼標籤。</p></div><span>✓</span></div><div class="step"><small>02</small><div><b>找出卡關原因</b><p>透過國文學習評估，辨認閱讀、理解或答題方法的落差。</p></div><span>✓</span></div><div class="step"><small>03</small><div><b>一起訂學習方向</b><p>依孩子的年級與目標，討論適合的課程與下一步。</p></div><span>✓</span></div></div></section>
 <section class="section trust"><div class="section-head"><span>A NOTE FOR PARENTS</span><span>04 / 給家長的話</span></div><div class="trust"><div class="symbol">華<span style="color:#b46e50">冠</span></div><div><h2>陪孩子累積的，<br>不只是一次考試的分數。</h2><p>我們相信，真正穩定的進步來自看懂自己的學習方式。從一篇文章、一個觀念開始，孩子能逐漸找到面對問題的信心。</p><div class="signature">華冠教學團隊　　陪你一起，看見孩子的下一步。</div></div></section>
-<section class="contact" id="contact"><div><div class="kicker">START WITH A CONVERSATION　　05 / 預約評估</div><h2>先聊聊，<br><em>再找到適合的路。</em></h2><p>留下聯絡方式與孩子目前的學習狀況，我們會與您聯繫，安排免費國文學習評估或課程諮詢。</p><p>◉　不必先準備完整資料，從您最在意的問題開始就好。</p></div><form class="form" onsubmit="event.preventDefault();this.innerHTML='<h3>謝謝您，已收到預約資料。</h3><p>這是網站展示版，表單尚未連接實際收件服務。正式上線前，請設定聯絡方式與通知流程。</p>'"><small>FREE LEARNING CHECK</small><h3>預約免費國文評估／試聽通知</h3><label>稱呼<input name="parentName" required placeholder="怎麼稱呼您？"></label><div class="formrow"><label>孩子年級（選填）<select name="grade"><option value="">請選擇</option><option>國一</option><option>國二</option><option>國三</option></select></label><label>電話<input name="phone" required type="tel" placeholder="方便聯絡的電話"></label></div><label>Email（選填）<input name="email" type="email" autocomplete="email" placeholder="方便收到通知的 Email"></label><label>預約試聽科目（選填）<select id="trial-subject" name="subjectInterest"><option value="">請選擇</option><option>國文</option><option>英文</option><option>數學</option><option>自然</option></select></label><label>目前最想了解的事（選填）<textarea name="notes" rows="3" placeholder="閱讀理解、文言文、作文，或孩子目前的學習狀況……"></textarea></label><label class="trial-optin"><input type="checkbox" name="trialUpdates">也想收到不定期試聽課程資訊（選填）</label><button>送出預約需求　→</button><small>僅供本次聯絡、課程諮詢及您勾選的試聽課通知使用。</small></form></section>
+<section class="contact" id="contact"><div><div class="kicker">START WITH A CONVERSATION　　05 / 預約評估</div><h2>先聊聊，<br><em>再找到適合的路。</em></h2><p>留下聯絡方式與孩子目前的學習狀況，我們會與您聯繫，安排免費國文學習評估或課程諮詢。</p><p>◉　不必先準備完整資料，從您最在意的問題開始就好。</p></div><form class="form" id="booking-form"><small>FREE LEARNING CHECK</small><h3>預約免費國文評估／試聽通知</h3><label>稱呼<input name="parentName" required placeholder="怎麼稱呼您？"></label><div class="formrow"><label>孩子年級（選填）<select name="grade"><option value="">請選擇</option><option>國一</option><option>國二</option><option>國三</option></select></label><label>電話<input name="phone" required type="tel" placeholder="方便聯絡的電話"></label></div><label>Email（選填）<input name="email" type="email" autocomplete="email" placeholder="方便收到通知的 Email"></label><label>預約試聽科目（選填）<select id="trial-subject" name="subjectInterest"><option value="">請選擇</option><option>國文</option><option>英文</option><option>數學</option><option>自然</option></select></label><label>目前最想了解的事（選填）<textarea name="notes" rows="3" placeholder="閱讀理解、文言文、作文，或孩子目前的學習狀況……"></textarea></label><label class="trial-optin"><input type="checkbox" name="trialUpdates" value="yes">也想收到不定期試聽課程資訊（選填）</label><button>送出預約需求　→</button><small>僅供本次聯絡、課程諮詢及您勾選的試聽課通知使用。</small></form><div class="form-success" id="form-success" role="status" aria-live="polite" hidden></div></section>
+<script>
+(() => {
+  const endpoint = 'https://script.google.com/macros/s/AKfycbygD0eIUBVN30xONpzQFTiUnivVh3NXVZzgeaEIC6pelGW2t9TJAr_iv6Li768bvSvo/exec';
+  const form = document.getElementById('booking-form');
+  const success = document.getElementById('form-success');
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    const button = form.querySelector('button[type="submit"], button:not([type])');
+    const originalText = button.textContent;
+    button.disabled = true;
+    button.textContent = '送出中…';
+    const data = new URLSearchParams(new FormData(form));
+    if (!data.has('trialUpdates')) data.set('trialUpdates', 'no');
+    try {
+      await fetch(endpoint, { method: 'POST', mode: 'no-cors', body: data });
+      form.hidden = true;
+      success.hidden = false;
+      success.innerHTML = '<h3>謝謝您，已送出預約需求。</h3><p>我們會盡快與您聯繫。若有急需，請致電 02 2773 8879。</p>';
+    } catch (error) {
+      button.disabled = false;
+      button.textContent = originalText;
+      success.hidden = false;
+      success.innerHTML = '<p>目前無法送出，請稍後再試，或致電 02 2773 8879 與我們聯絡。</p>';
+    }
+  });
+})();
+</script>
 <footer class="footer"><a class="brand" href="#top"><img src="public/huaguan-logo-transparent.png" alt="華冠 LOGO"><span class="brand-label">華冠文理補習班</span></a><div class="footer-contact"><b>華冠文理補習班</b><a href="tel:+886227738879">02 2773 8879</a><a href="https://www.google.com/maps/search/?api=1&query=105臺北市松山區中正里八德路二段383號3樓" target="_blank" rel="noreferrer">105臺北市松山區中正里八德路二段383號3樓</a></div><span>國英數自完整課程｜國文特色教學</span></footer></body></html>
