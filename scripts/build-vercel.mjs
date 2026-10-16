@@ -8,3 +8,4 @@ const html = await readFile(resolve(root, 'landing-preview.html'), 'utf8');
 const deployHtml = html.replaceAll('public/huaguan-logo-transparent.png', 'huaguan-logo-transparent.png');
 await writeFile(resolve(output, 'index.html'), deployHtml);
 await cp(resolve(root, 'public/huaguan-logo-transparent.png'), resolve(output, 'huaguan-logo-transparent.png'));
+await cp(resolve(root, 'public/huaguan-logo-transparent.png'), resolve(output, 'huaguan-logo-share.png'));
